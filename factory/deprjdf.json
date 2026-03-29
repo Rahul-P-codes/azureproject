@@ -1,0 +1,9 @@
+{
+	"name": "deprjdf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9ea9a1af-4fd9-446b-9d89-9e4ea79f0e02",
+		"tenantId": "d6508b81-f875-424c-96ed-6119db9b8e7d"
+	}
+}
