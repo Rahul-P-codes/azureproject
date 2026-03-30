@@ -262,7 +262,10 @@
 												"type": "DatasetReference",
 												"parameters": {
 													"container": "bronze",
-													"folder": "cdc",
+													"folder": {
+														"value": "@{item().table}_cdc",
+														"type": "Expression"
+													},
 													"file": "empty.json"
 												}
 											}
@@ -303,7 +306,7 @@
 												{
 													"type": "Query",
 													"text": {
-														"value": "select max(@{item().cdc_column}) as cdc from @{item().schema}.@{item().table}",
+														"value": "select max(@{item().cdc_col}) as cdc from @{item().schema}.@{item().table}",
 														"type": "Expression"
 													}
 												}
