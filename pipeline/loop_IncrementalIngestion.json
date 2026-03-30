@@ -327,10 +327,7 @@
 					{
 						"activity": "loopbatch",
 						"dependencyConditions": [
-							"Failed",
-							"Skipped",
-							"Succeeded",
-							"Completed"
+							"Failed"
 						]
 					}
 				],
