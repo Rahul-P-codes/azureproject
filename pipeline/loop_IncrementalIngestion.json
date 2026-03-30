@@ -1,13 +1,19 @@
 {
-	"name": "IncrementalIngestion_copy1",
+	"name": "loop_IncrementalIngestion",
 	"properties": {
 		"activities": [
 			{
-				"name": "ForEach1",
+				"name": "loopbatch",
+				"description": "",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.loop_input",
+						"type": "Expression"
+					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "azuresqltolake",
